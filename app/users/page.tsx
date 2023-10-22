@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import getAllUsers from 'api/lib/getAllUsers';
 import Link from 'next/link';
 
-export const metadat: Metadata ={
+export const metadata: Metadata ={
   title: 'Users',
 }
 
