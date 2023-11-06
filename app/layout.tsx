@@ -1,7 +1,11 @@
 import './globals.css'
-import { Inter } from '@next/font/google'
+import NavBar from './components/NavBar'
+import ProfilePic from './components/ProfilePic'
 
-const inter = Inter({ subsets: ['latin'] })
+export const metadata = {
+  title: "Rob's profile",
+  description: "Created by Rob"
+}
 
 export default function RootLayout({
   children,
@@ -15,10 +19,9 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={inter.className}>
-        <nav>
-          <h1>My Navbar</h1>
-        </nav>
+      <body className="dark:bg-slate-800">
+        <NavBar />
+        <ProfilePic />
         {children}
       </body>
     </html>
